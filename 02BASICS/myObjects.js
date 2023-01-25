@@ -5,11 +5,11 @@
 //     isActive: true
 // }
 exports.__esModule = true;
-function createUser(user) {
-    return {
-        name: user.name,
-        email: user.email,
-        isActive: user.isActive
-    };
-}
-createUser({ name: '', email: '', isActive: true });
+var myUser = {
+    _id: '1245',
+    name: 'Alvin',
+    email: 'alvin@dev.co',
+    isActive: false
+};
+myUser.email = 'alvin@gmail.com';
+myUser._id = '13532'; // readonly - can't reassign
