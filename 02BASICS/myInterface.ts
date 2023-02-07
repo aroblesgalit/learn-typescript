@@ -8,10 +8,15 @@ interface User {
     getCoupon(couponname: string, value: number): number
 }
 
+interface User {
+    githubToken: string
+}
+
 const alvin: User = {
     dbId: 12,
     email: 'alvin@dev.co',
     userId: 1234,
+    githubToken: 'github',
     startTrial: () => {
         return 'Trial started'
     },
