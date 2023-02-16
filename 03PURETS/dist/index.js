@@ -31,6 +31,15 @@ class User {
         this._courseCount = courseNum;
     }
 }
+class SubUser extends User {
+    constructor() {
+        super(...arguments);
+        this.isFamily = true;
+    }
+    changeCourseCount() {
+        this._courseCount = 4;
+    }
+}
 const alvin = new User('alvin@dev.co', 'alvin');
 // alvin.name
 // alvin.deleteToken()
